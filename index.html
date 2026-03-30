@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="مركز لمسة جمال - أفضل مركز تجميل في غزة، فلسطين. خدمات العناية بالبشرة والشعر والمكياج والليزر بأيدي خبيرات محترفات.">
+    <title>مركز لمسة جمال | غزة، فلسطين</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <div class="loader-logo">✿</div>
+            <div class="loader-name">لمسة <span>جمال</span></div>
+            <div class="loader-bar"><div class="loader-fill"></div></div>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a class="logo" onclick="navigateTo('home')">
+                <div class="logo-icon">✿</div>
+                <div class="logo-text">لمسة <span>جمال</span></div>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a onclick="navigateTo('home')" class="active" data-page="home">الرئيسية</a></li>
+                <li><a onclick="navigateTo('services')" data-page="services">خدماتنا</a></li>
+                <li><a onclick="navigateTo('contact')" data-page="contact">تواصل معنا</a></li>
+                <li><a onclick="navigateTo('contact')" class="nav-cta">احجزي الآن ✨</a></li>
+            </ul>
+            <div class="mobile-toggle" id="mobileToggle" onclick="toggleMobile()">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HOME PAGE -->
+    <div class="page active" id="page-home">
+
+        <section class="hero">
+            <div class="hero-particles" id="particles"></div>
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-pulse"></span>
+                    ✨ مرحباً بكِ — غزة، فلسطين 🇵🇸
+                </div>
+                <h1>اكتشفي <em>جمالك</em> الحقيقي<br>مع أفضل خبراء التجميل</h1>
+                <p>نقدم لكِ تجربة فريدة من العناية بالبشرة والشعر والأظافر<br>باستخدام أحدث التقنيات وأفضل المنتجات العالمية</p>
+                <div class="hero-buttons">
+                    <a class="btn btn-primary" onclick="navigateTo('services')">🌸 اكتشفي خدماتنا</a>
+                    <a class="btn btn-outline" onclick="navigateTo('contact')">📞 احجزي موعدك</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item"><div class="stat-number" id="counter1">0</div><div class="stat-label">عميلة سعيدة</div></div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item"><div class="stat-number" id="counter2">0</div><div class="stat-label">سنوات خبرة</div></div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item"><div class="stat-number" id="counter3">0</div><div class="stat-label">خدمة متنوعة</div></div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item"><div class="stat-number" id="counter4">0</div><div class="stat-label">خبيرة تجميل</div></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-gray">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <div class="section-badge">💎 خدماتنا المميزة</div>
+                    <h2>نقدم لكِ <span>أفضل</span> الخدمات</h2>
+                    <div class="section-line"></div>
+                    <p>مجموعة متكاملة من خدمات التجميل والعناية تلبي جميع احتياجاتك</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card animate-on-scroll"><div class="service-icon-bg"><div class="service-icon">💆‍♀️</div></div><h3>العناية بالبشرة</h3><p>جلسات تنظيف عميق وترطيب وعلاج مشاكل البشرة بأحدث الأجهزة والتقنيات</p><div class="card-cta">اعرفي أكثر ←</div></div>
+                    <div class="service-card animate-on-scroll"><div class="service-icon-bg"><div class="service-icon">💇‍♀️</div></div><h3>تصفيف الشعر</h3><p>قص وصبغ وتصفيف وعلاجات الشعر المتضرر مع أفضل خبيرات الشعر</p><div class="card-cta">اعرفي أكثر ←</div></div>
+                    <div class="service-card animate-on-scroll"><div class="service-icon-bg"><div class="service-icon">💅</div></div><h3>العناية بالأظافر</h3><p>مانيكير وبديكير وتركيب أظافر اكريليك وجل بتصاميم عصرية</p><div class="card-cta">اعرفي أكثر ←</div></div>
+                    <div class="service-card animate-on-scroll"><div class="service-icon-bg"><div class="service-icon">👰</div></div><h3>مكياج المناسبات</h3><p>مكياج احترافي للأعراس والمناسبات الخاصة بأيدي أمهر خبيرات المكياج</p><div class="card-cta">اعرفي أكثر ←</div></div>
+                    <div class="service-card animate-on-scroll"><div class="service-icon-bg"><div class="service-icon">🧖‍♀️</div></div><h3>حمام مغربي</h3><p>تجربة حمام مغربي تقليدي أصيل للاسترخاء وتجديد البشرة</p><div class="card-cta">اعرفي أكثر ←</div></div>
+                    <div class="service-card animate-on-scroll"><div class="service-icon-bg"><div class="service-icon">✨</div></div><h3>الليزر</h3><p>أحدث أجهزة إزالة الشعر بالليزر بتقنية آمنة وفعالة ونتائج دائمة</p><div class="card-cta">اعرفي أكثر ←</div></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image animate-on-scroll">
+                        <div class="img-frame">
+                            <img src="image/qkscmnym.png" alt="مركز لمسة جمال" class="main-img">
+                            <div class="img-deco-1"></div>
+                            <div class="img-deco-2"></div>
+                        </div>
+                        <div class="floating-card">
+                            <div class="fc-icon">🏆</div>
+                            <div class="fc-text"><h4>+10 سنوات</h4><p>من التميز والإبداع</p></div>
+                        </div>
+                        <div class="floating-card-2">
+                            <span>📍</span> غزة، فلسطين 🇵🇸
+                        </div>
+                    </div>
+                    <div class="about-content animate-on-scroll">
+                        <div class="section-badge">🌟 من نحن</div>
+                        <h2>مركز <span>لمسة جمال</span><br>وجهتك للجمال في غزة</h2>
+                        <p>نحن مركز تجميل متكامل في قلب مدينة غزة، تأسس عام 2014، نسعى دائماً لتقديم أعلى مستويات الخدمة والجودة. فريقنا المتخصص من خبيرات التجميل يعمل بشغف لإبراز جمالك الطبيعي.</p>
+                        <p>نستخدم أحدث الأجهزة والتقنيات العالمية مع أفضل المنتجات من الماركات الفاخرة لضمان حصولك على نتائج مبهرة.</p>
+                        <div class="about-features">
+                            <div class="about-feature"><div class="check">✓</div><span>منتجات عالمية فاخرة</span></div>
+                            <div class="about-feature"><div class="check">✓</div><span>أحدث الأجهزة والتقنيات</span></div>
+                            <div class="about-feature"><div class="check">✓</div><span>فريق متخصص ومحترف</span></div>
+                            <div class="about-feature"><div class="check">✓</div><span>بيئة مريحة وفاخرة</span></div>
+                            <div class="about-feature"><div class="check">✓</div><span>أسعار تنافسية بالشيكل</span></div>
+                            <div class="about-feature"><div class="check">✓</div><span>نظافة وتعقيم كامل</span></div>
+                        </div>
+                        <a class="btn btn-pink" onclick="navigateTo('contact')">📩 تواصلي معنا</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-gray">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <div class="section-badge">📸 معرض أعمالنا</div>
+                    <h2>لقطات من <span>إبداعاتنا</span></h2>
+                    <div class="section-line"></div>
+                    <p>شاهدي بعض أعمالنا المميزة وتحولات عملائنا</p>
+                </div>
+                <div class="gallery-grid animate-on-scroll">
+                    <div class="gallery-item"><img src="image\io8esfy7.png" alt="مكياج عروس"><div class="gallery-overlay"><span>مكياج عرائس</span></div></div>
+                    <div class="gallery-item"><img src="image\j95ifuga.png" alt="تصفيف شعر"><div class="gallery-overlay"><span>تصفيف شعر</span></div></div>
+                    <div class="gallery-item"><img src="image\g4yjthdk.png" alt="أظافر"><div class="gallery-overlay"><span>فن الأظافر</span></div></div>
+                    <div class="gallery-item"><img src="image\niml480p.png" alt="عناية بشرة"><div class="gallery-overlay"><span>عناية بالبشرة</span></div></div>
+                    <div class="gallery-item"><img src="image\wm6ys71k.png" alt="صبغة شعر"><div class="gallery-overlay"><span>صبغات شعر</span></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section testimonials-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <div class="section-badge">💬 آراء عملائنا</div>
+                    <h2>ماذا قالت <span>عملاؤنا</span> عنا</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card animate-on-scroll">
+                        <div class="t-top"><div class="stars">⭐⭐⭐⭐⭐</div><div class="quote-mark">❝</div></div>
+                        <p>تجربة رائعة جداً! الفريق محترف والنتيجة فاقت توقعاتي. مكياج يوم زفافي كان مثالي وكل الحضور أشاد بجماله.</p>
+                        <div class="testimonial-author">
+                            <img src="image\erd3kp3k.png" alt="سارة">
+                            <div><h4>سارة أحمد</h4><small>غزة</small></div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card animate-on-scroll">
+                        <div class="t-top"><div class="stars">⭐⭐⭐⭐⭐</div><div class="quote-mark">❝</div></div>
+                        <p>من أفضل مراكز التجميل في غزة. النظافة ممتازة والأجواء مريحة جداً. جلسة العناية بالبشرة كانت مذهلة!</p>
+                        <div class="testimonial-author">
+                            <img src="image\t2hvdppc.png" alt="نورة">
+                            <div><h4>نورة محمد</h4><small>رفح</small></div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card animate-on-scroll">
+                        <div class="t-top"><div class="stars">⭐⭐⭐⭐⭐</div><div class="quote-mark">❝</div></div>
+                        <p>المكان فخم والخدمة ممتازة والأسعار مناسبة جداً. أنصح كل وحدة تجرب خدماتهم خصوصاً الحمام المغربي!</p>
+                        <div class="testimonial-author">
+                            <img src="image\23shawvf.png" alt="لينا">
+                            <div><h4>لينا خالد</h4><small>خان يونس</small></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-inner">
+                <div class="cta-content animate-on-scroll">
+                    <div class="cta-tag">🎁 عرض خاص</div>
+                    <h2>مستعدة لتجربة لا تُنسى؟ ✨</h2>
+                    <p>احجزي موعدك الآن واحصلي على خصم 20% على أول زيارة</p>
+                    <a class="btn btn-cta" onclick="navigateTo('contact')">🗓️ احجزي موعدك الآن</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- SERVICES PAGE -->
+    <div class="page" id="page-services">
+        <section class="page-hero services-hero">
+            <div><div class="section-badge" style="margin-bottom:15px; color:white; background:rgba(255,255,255,0.2);">💎 خدماتنا</div><h1>خدماتنا المميزة</h1><p>اكتشفي مجموعتنا الشاملة من خدمات التجميل في غزة</p></div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <div class="section-badge">🌸 تفاصيل الخدمات</div>
+                    <h2>خدمات <span>احترافية</span> لجمالك</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="services-detail-grid">
+                    <div class="service-detail-card animate-on-scroll">
+                        <div class="service-detail-img"><img src="image\niml480p.png" alt="عناية بالبشرة"><div class="img-tag">الأكثر طلباً</div></div>
+                        <div class="service-detail-info"><h3>💆‍♀️ العناية بالبشرة</h3><p>جلسات متخصصة لتنظيف البشرة العميق، التقشير الكريستالي، علاج حب الشباب، جلسات الهيدرافيشل، وأقنعة الكولاجين.</p><div class="service-detail-bottom"><div class="service-price">₪150 <small>تبدأ من</small></div><button class="btn-book" onclick="navigateTo('contact')">احجزي الآن</button></div></div>
+                    </div>
+                    <div class="service-detail-card animate-on-scroll">
+                        <div class="service-detail-img"><img src="image\io8esfy7.png" alt="مكياج"></div>
+                        <div class="service-detail-info"><h3>👰 مكياج احترافي</h3><p>مكياج سهرات ومناسبات، مكياج عرائس فاخر، مكياج سينمائي، مكياج خفيف يومي. باستخدام أفخم الماركات العالمية.</p><div class="service-detail-bottom"><div class="service-price">₪300 <small>تبدأ من</small></div><button class="btn-book" onclick="navigateTo('contact')">احجزي الآن</button></div></div>
+                    </div>
+                    <div class="service-detail-card animate-on-scroll">
+                        <div class="service-detail-img"><img src="image\j95ifuga.png" alt="شعر"></div>
+                        <div class="service-detail-info"><h3>💇‍♀️ تصفيف وعلاج الشعر</h3><p>قص شعر عصري، صبغات بأحدث الألوان، بروتين وكيراتين، علاج الشعر التالف، تركيب وصلات شعر طبيعية.</p><div class="service-detail-bottom"><div class="service-price">₪100 <small>تبدأ من</small></div><button class="btn-book" onclick="navigateTo('contact')">احجزي الآن</button></div></div>
+                    </div>
+                    <div class="service-detail-card animate-on-scroll">
+                        <div class="service-detail-img"><img src="image\g4yjthdk.png" alt="أظافر"></div>
+                        <div class="service-detail-info"><h3>💅 العناية بالأظافر</h3><p>مانيكير وبديكير كلاسيكي وجل، تركيب أظافر اكريليك، فن الأظافر والرسم، علاج الأظافر الضعيفة.</p><div class="service-detail-bottom"><div class="service-price">₪80 <small>تبدأ من</small></div><button class="btn-book" onclick="navigateTo('contact')">احجزي الآن</button></div></div>
+                    </div>
+                    <div class="service-detail-card animate-on-scroll">
+                        <div class="service-detail-img"><img src="image\adj2gkrn.png" alt="حمام مغربي"></div>
+                        <div class="service-detail-info"><h3>🧖‍♀️ حمام مغربي وساونا</h3><p>حمام مغربي تقليدي أصيل، ساونا وبخار، مساج استرخائي كامل، تقشير وتفتيح الجسم.</p><div class="service-detail-bottom"><div class="service-price">₪200 <small>تبدأ من</small></div><button class="btn-book" onclick="navigateTo('contact')">احجزي الآن</button></div></div>
+                    </div>
+                    <div class="service-detail-card animate-on-scroll">
+                        <div class="service-detail-img"><img src="image\urd8lsmw.png" alt="ليزر"></div>
+                        <div class="service-detail-info"><h3>✨ إزالة الشعر بالليزر</h3><p>أحدث أجهزة الليزر العالمية، آمنة على جميع أنواع البشرة، نتائج فعالة ودائمة بدون ألم.</p><div class="service-detail-bottom"><div class="service-price">₪250 <small>تبدأ من</small></div><button class="btn-book" onclick="navigateTo('contact')">احجزي الآن</button></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-gray">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <div class="section-badge">💰 باقاتنا</div>
+                    <h2>باقات <span>مميزة</span> بأسعار منافسة</h2>
+                    <div class="section-line"></div>
+                    <p>اختاري الباقة المناسبة لكِ واستمتعي بتجربة فريدة</p>
+                </div>
+                <div class="pricing-grid">
+                    <div class="pricing-card animate-on-scroll">
+                        <div class="pricing-icon">🌷</div><h3>الباقة الأساسية</h3>
+                        <div class="price">₪499</div><div class="price-desc">مثالية للعناية الأساسية</div>
+                        <ul><li><span class="li-icon">✓</span> تنظيف بشرة عميق</li><li><span class="li-icon">✓</span> سشوار وتصفيف</li><li><span class="li-icon">✓</span> مانيكير كلاسيكي</li><li><span class="li-icon">✓</span> بديكير كلاسيكي</li><li><span class="li-icon">✓</span> قناع مرطب للوجه</li></ul>
+                        <button class="btn btn-pink" style="width:100%;" onclick="navigateTo('contact')">اختاري هذه الباقة</button>
+                    </div>
+                    <div class="pricing-card featured animate-on-scroll">
+                        <div class="featured-badge">👑 الأكثر طلباً</div>
+                        <div class="pricing-icon">👑</div><h3>الباقة الملكية</h3>
+                        <div class="price">₪999</div><div class="price-desc">تجربة فاخرة ومتكاملة</div>
+                        <ul><li><span class="li-icon">✓</span> جلسة هيدرافيشل</li><li><span class="li-icon">✓</span> قص وصبغة شعر</li><li><span class="li-icon">✓</span> مانيكير + بديكير جل</li><li><span class="li-icon">✓</span> حمام مغربي كامل</li><li><span class="li-icon">✓</span> مساج استرخائي 60 دقيقة</li><li><span class="li-icon">✓</span> مكياج سهرة</li></ul>
+                        <button class="btn btn-primary" style="width:100%;" onclick="navigateTo('contact')">اختاري هذه الباقة</button>
+                    </div>
+                    <div class="pricing-card animate-on-scroll">
+                        <div class="pricing-icon">💍</div><h3>باقة العروس</h3>
+                        <div class="price">₪2499</div><div class="price-desc">لأجمل يوم في حياتك</div>
+                        <ul><li><span class="li-icon">✓</span> مكياج عروس فاخر</li><li><span class="li-icon">✓</span> تسريحة شعر + وصلات</li><li><span class="li-icon">✓</span> حمام مغربي ملكي</li><li><span class="li-icon">✓</span> عناية كاملة بالبشرة</li><li><span class="li-icon">✓</span> مانيكير + بديكير فاخر</li><li><span class="li-icon">✓</span> تجربة قبل العرس</li></ul>
+                        <button class="btn btn-pink" style="width:100%;" onclick="navigateTo('contact')">اختاري هذه الباقة</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- CONTACT PAGE -->
+    <div class="page" id="page-contact">
+        <section class="page-hero contact-hero">
+            <div><div class="section-badge" style="margin-bottom:15px; color:white; background:rgba(255,255,255,0.2);">📞 تواصلي</div><h1>احجزي موعدك</h1><p>نسعد بتواصلك وحجز موعدك معنا في غزة</p></div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-form-wrapper animate-on-scroll">
+                        <h3>📩 احجزي موعدك الآن</h3>
+                        <form id="contactForm" onsubmit="handleSubmit(event)">
+                            <div class="form-row">
+                                <div class="form-group"><label>الاسم الكامل</label><input type="text" placeholder="أدخلي اسمك" required></div>
+                                <div class="form-group"><label>رقم الجوال</label><input type="tel" placeholder="059XXXXXXX" required></div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group"><label>البريد الإلكتروني</label><input type="email" placeholder="email@example.com"></div>
+                                <div class="form-group"><label>الخدمة المطلوبة</label><select required><option value="">اختاري الخدمة</option><option>العناية بالبشرة</option><option>مكياج احترافي</option><option>تصفيف الشعر</option><option>العناية بالأظافر</option><option>حمام مغربي</option><option>إزالة الشعر بالليزر</option><option>باقة العروس</option><option>أخرى</option></select></div>
+                            </div>
+                            <div class="form-group"><label>التاريخ المفضل</label><input type="date"></div>
+                            <div class="form-group"><label>ملاحظات إضافية</label><textarea placeholder="اكتبي أي ملاحظات أو استفسارات..."></textarea></div>
+                            <button type="submit" class="btn-submit">🗓️ تأكيد الحجز</button>
+                        </form>
+                        <div class="success-msg" id="successMsg">✅ تم إرسال طلب الحجز بنجاح! سنتواصل معك قريباً.</div>
+                    </div>
+                    <div class="contact-info-wrapper animate-on-scroll">
+                        <h3>📍 معلومات التواصل</h3>
+                        <div class="contact-info-card"><div class="info-icon">📍</div><div class="info-content"><h4>العنوان</h4><p>شارع عمر المختار، وسط المدينة<br>غزة، فلسطين 🇵🇸</p></div></div>
+                        <div class="contact-info-card"><div class="info-icon">📱</div><div class="info-content"><h4>الجوال</h4><p>+970 59 123 4567<br>+970 59 987 6543</p></div></div>
+                        <div class="contact-info-card"><div class="info-icon">📧</div><div class="info-content"><h4>البريد الإلكتروني</h4><p>info@lamsatjamal.ps</p></div></div>
+                        <div class="contact-info-card"><div class="info-icon">📲</div><div class="info-content"><h4>تابعينا</h4><p>@lamsatjamal.gaza على انستقرام</p></div></div>
+                        <div class="working-hours">
+                            <h4>🕐 ساعات العمل</h4>
+                            <div class="hours-row"><span>الأحد - الخميس</span><span>10:00 ص - 9:00 م</span></div>
+                            <div class="hours-row"><span>الجمعة</span><span>2:00 م - 9:00 م</span></div>
+                            <div class="hours-row"><span>حجوزات العرائس</span><span>متاحة 24/7</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <div class="logo" style="margin-bottom:15px; color:white;"><div class="logo-icon">✿</div><div class="logo-text">لمسة <span>جمال</span></div></div>
+                    <p>مركز تجميل متكامل في قلب مدينة غزة يقدم أرقى خدمات العناية بالجمال. نسعى دائماً لإبراز جمالك الطبيعي.</p>
+                    <div class="footer-social"><a href="#">📷</a><a href="#">👻</a><a href="#">🎵</a><a href="#">🔵</a></div>
+                </div>
+                <div class="footer-col"><h3>روابط سريعة</h3><ul><li><a onclick="navigateTo('home')">الرئيسية</a></li><li><a onclick="navigateTo('services')">خدماتنا</a></li><li><a onclick="navigateTo('contact')">تواصل معنا</a></li><li><a onclick="navigateTo('contact')">احجزي موعد</a></li></ul></div>
+                <div class="footer-col"><h3>خدماتنا</h3><ul><li><a onclick="navigateTo('services')">العناية بالبشرة</a></li><li><a onclick="navigateTo('services')">تصفيف الشعر</a></li><li><a onclick="navigateTo('services')">المكياج</a></li><li><a onclick="navigateTo('services')">الحمام المغربي</a></li><li><a onclick="navigateTo('services')">الليزر</a></li></ul></div>
+                <div class="footer-col"><h3>تواصلي معنا</h3><ul><li><a>📍 غزة، شارع عمر المختار</a></li><li><a>📱 +970 59 123 4567</a></li><li><a>📧 info@lamsatjamal.ps</a></li><li><a>🕐 يومياً 10ص - 9م</a></li></ul></div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 <span>مركز لمسة جمال</span> · غزة، فلسطين 🇵🇸 · جميع الحقوق محفوظة ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop" onclick="scrollToTop()">↑</button>
+    <a href="https://wa.me/970591234567" target="_blank" class="whatsapp-float" title="تواصلي عبر واتساب">💬</a>
+
+    <script src="script.js"></script>
+</body>
+</html>
